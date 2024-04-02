@@ -1,0 +1,226 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+  background: rgb(3, 88, 76);
+  min-height: 200vh;
+}
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 10000;
+}
+header.sticky
+{
+  padding: 5px 100px;
+  background: #fff;
+  opacity: 0.8;
+}
+header.logo
+{
+  position: relative;
+  transition: 0,6s;
+}
+header img
+{
+  opacity: 0.5;
+  transition: 0.6s;
+}
+header.sticky img
+{
+  opacity: 1;
+}
+header ul
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li
+{
+  position: relative;
+  list-style: none;
+}
+header ul li b
+{
+  margin: 0 15px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  background: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+header.sticky ul li b
+{
+  opacity: 1;
+  background-color: none;
+}
+.bannerIntro
+{
+  width: 100%;
+  height: 150vh;
+  background: url(BG.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 0.9s ease;
+}
+.bannerGallery
+{
+  width: 100%;
+  height: 200vh;
+  background: rgb(3, 88, 76);
+  background-size: cover;
+  background-position: center;
+}
+section
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bannerIntro div
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bannerIntro div
+{
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+  text-align-last: center;
+}
+.bannerIntro div p
+{
+  background: rgb(255, 255, 255, 0.5);
+  padding: 20px;
+}
+.logoV
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  opacity: 0.5;
+}
+.bannerGallery {
+  position: relative;
+  overflow: hidden;
+}
+.bannerGallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+.bannerGallery b {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  font-stretch: extra-expanded;
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+.bannerGallery img:nth-child(4) {top: 5%; left: 9%; z-index: 3;}
+.bannerGallery img:nth-child(5) {top: 6%; left: 33%; z-index: 4;}
+.bannerGallery img:nth-child(6) {top: 9%; left: 67%; z-index: 2;}
+.bannerGallery img:nth-child(7) { top: 27%; left: 33%; z-index: 1;}
+.bannerGallery img:nth-child(8) { top: 46%; left: 11%; z-index: 4;}
+.bannerGallery img:nth-child(9) { top: 60%; left: 35%; z-index: 6;}
+.bannerGallery img:nth-child(10) { top: 50%; left: 64%; z-index: 5;}
+.bannerGallery img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+.bannerGallery.show1 b {opacity: 1;}
+.bannerGallery.show2 img:nth-child(4) {opacity: 1;}
+.bannerGallery.show3 img:nth-child(5) {opacity: 1;}
+.bannerGallery.show4 img:nth-child(6) {opacity: 1;}
+.bannerGallery.show5 img:nth-child(7) {opacity: 1;}
+.bannerGallery.show6 img:nth-child(8) {opacity: 1;}
+.bannerGallery.show8 img:nth-child(9) {opacity: 1;}
+.bannerGallery.show7 img:nth-child(10) {opacity: 1;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-youtube {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-facebook {
+  color: white;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 50px;
+}
+
+.social-links .social-icon {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-links .social-icon:hover {
+  transform: scale(1.2); /* Efek zoom ketika dihover */
+}
+
+.contact-email a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline; /* Efek garis bawah ketika dihover */
+}
